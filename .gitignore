@@ -1,0 +1,29 @@
+# Rust/Cargo
+/target/
+**/*.rs.bk
+**/*.bak
+**/*.tmp
+Cargo.lock
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs/editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Plugin binaries
+plugins/*.so
+plugins/*.dll
+plugins/*.dylib
+
+# Misc
+*.log
+*.env
+
+# By default, do not ignore assets or plugins source
+!assets/
+!plugins/ 
