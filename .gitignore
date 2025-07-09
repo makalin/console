@@ -1,28 +1,72 @@
-# Rust/Cargo
+# Rust build artifacts
 /target/
 **/*.rs.bk
-**/*.bak
-**/*.tmp
 Cargo.lock
 
-# OS
-.DS_Store
-Thumbs.db
-
-# IDEs/editors
-.idea/
+# IDE and editor files
 .vscode/
+.idea/
 *.swp
 *.swo
+*~
 
-# Plugin binaries
-plugins/*.so
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# nyc test coverage
+.nyc_output
+
+# Dependency directories
+node_modules/
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
+
+# Project specific
+data.json
+test_storage.json
 plugins/*.dll
+plugins/*.so
 plugins/*.dylib
 
-# Misc
-*.log
-*.env
+# Backup files
+*.bak
+*.backup
+
+# Temporary files
+*.tmp
+*.temp
 
 # By default, do not ignore assets or plugins source
 !assets/

@@ -46,6 +46,31 @@ pub trait Plugin {
 }
 ```
 
+## 🖌️ UI Layout Editing
+
+The UI layout is now defined in `ui_layout.xml` using a simple XML schema. You can edit this file to change the window structure, add panels, and split views. Example:
+
+```xml
+<ui>
+  <window title="Main Dashboard" width="800" height="600">
+    <split direction="horizontal">
+      <panel title="Speedometer"/>
+      <split direction="vertical">
+        <panel title="Telemetry"/>
+        <panel title="Music"/>
+      </split>
+    </split>
+  </window>
+  <window title="Settings" width="400" height="300">
+    <panel title="Preferences"/>
+  </window>
+</ui>
+```
+
+- You can add, remove, or rearrange `<window>`, `<split>`, and `<panel>` elements.
+- The app will parse this file at startup (and can be extended to support live reloading).
+- See `src/ui.rs` for the Rust data structures and parser.
+
 ## 📜 License
 
 MIT

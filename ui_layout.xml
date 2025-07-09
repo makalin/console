@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dashboard>
+    <section id="messages">
+        <message>Text message here...</message>
+        <message>Another text message here...</message>
+        <message>Yet another message here...</message>
+    </section>
+    <section id="carCondition">
+        <warning>BACK TIRES PRESSURE IS LOW</warning>
+        <tire pressure="32" location="front-left"/>
+        <tire pressure="32" location="front-right"/>
+        <tire pressure="30" location="back-left"/>
+        <tire pressure="32" location="back-right"/>
+    </section>
+    <section id="timeCondition">
+        <arrival>ARRIVAL IN 15 MINUTES</arrival>
+        <map>
+            <route>Current route data...</route>
+        </map>
+    </section>
+    <section id="speedometer">
+        <speed value="120" unit="km/h"/>
+        <rpm value="4"/>
+    </section>
+    <section id="media">
+        <player>
+            <status>playing</status>
+            <track>Track 1</track>
+            <volume level="medium"/>
+        </player>
+    </section>
+    <section id="stats">
+        <time>21:45</time>
+        <totalDistance value="96.021" unit="km"/>
+        <lap distance="96.021" unit="km" number="1"/>
+        <lap distance="96.021" unit="km" number="2"/>
+        <lap distance="96.021" unit="km" number="3"/>
+        <lap distance="96.021" unit="km" number="4"/>
+    </section>
+</dashboard>
